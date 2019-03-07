@@ -46,22 +46,21 @@ extension ViewController :  UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if indexPath.row ==  0 { openUserDeaultController() }
-        if indexPath.row ==  1 { openKeyChainController() }
-
-    }
-    
-    func openUserDeaultController(){
-        
+        var controller : UIViewController?
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        let  userDefaultController = (storyboard.instantiateViewController(withIdentifier: "MAKUserDefaultController"))
-        self.navigationController?.pushViewController(userDefaultController, animated: true)
-    }
-    
-    func openKeyChainController(){
         
-        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        let  userDefaultController = (storyboard.instantiateViewController(withIdentifier: "MAKKeyChainController"))
-        self.navigationController?.pushViewController(userDefaultController, animated: true)
-    }
+        if indexPath.row ==  0 {
+            controller = (storyboard.instantiateViewController(withIdentifier: "MAKUserDefaultController"))
+        }
+        else if indexPath.row ==  1 {
+            controller = (storyboard.instantiateViewController(withIdentifier: "MAKKeyChainController"))
+        }else  {
+                controller = (storyboard.instantiateViewController(withIdentifier: "MAKCoreDataController"))
+            }
+            self.navigationController?.pushViewController(controller!, animated: true)
+            
+        }
+        
+    
+        
 }

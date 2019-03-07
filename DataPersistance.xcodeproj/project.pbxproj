@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9C1212712231AE3000B9FE4A /* UserData.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 9C1212702231AE3000B9FE4A /* UserData.xcdatamodel */; };
+		9C1212732231B8E900B9FE4A /* MAKCoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1212722231B8E900B9FE4A /* MAKCoreDataController.swift */; };
 		9CD366A02230776300FC29FD /* KeyChainExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD3669F2230776300FC29FD /* KeyChainExtension.swift */; };
 		9CD366A22230778A00FC29FD /* MAKKeyChainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD366A12230778A00FC29FD /* MAKKeyChainController.swift */; };
 		9CD9A2BE222F100B001EE38C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD9A2BD222F100B001EE38C /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		9C1212702231AE3000B9FE4A /* UserData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserData.xcdatamodel; sourceTree = "<group>"; };
+		9C1212722231B8E900B9FE4A /* MAKCoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAKCoreDataController.swift; sourceTree = "<group>"; };
 		9CD3669F2230776300FC29FD /* KeyChainExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChainExtension.swift; sourceTree = "<group>"; };
 		9CD366A12230778A00FC29FD /* MAKKeyChainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAKKeyChainController.swift; sourceTree = "<group>"; };
 		9CD9A2BA222F100B001EE38C /* DataPersistance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataPersistance.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +70,7 @@
 				9CD9A2BF222F100B001EE38C /* ViewController.swift */,
 				9CD9A2CF222F163C001EE38C /* MAKUserDefaultController.swift */,
 				9CD366A12230778A00FC29FD /* MAKKeyChainController.swift */,
+				9C1212722231B8E900B9FE4A /* MAKCoreDataController.swift */,
 				9CD9A2D1222F165B001EE38C /* MAKUserDefaultExtension.swift */,
 				9CD3669F2230776300FC29FD /* KeyChainExtension.swift */,
 				9C1212702231AE3000B9FE4A /* UserData.xcdatamodel */,
@@ -156,6 +159,7 @@
 				9CD9A2C0222F100B001EE38C /* ViewController.swift in Sources */,
 				9CD9A2BE222F100B001EE38C /* AppDelegate.swift in Sources */,
 				9CD9A2D2222F165B001EE38C /* MAKUserDefaultExtension.swift in Sources */,
+				9C1212732231B8E900B9FE4A /* MAKCoreDataController.swift in Sources */,
 				9CD9A2D0222F163C001EE38C /* MAKUserDefaultController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
