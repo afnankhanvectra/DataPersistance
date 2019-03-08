@@ -10,20 +10,23 @@ import UIKit
 
 class MAKUserDefaultController: UIViewController {
     
+    //MARK: IbOutlets
     @IBOutlet weak var userNameTextField :  UITextField!
     @IBOutlet weak var userIdTextField :    UITextField!
     @IBOutlet weak var dobTextField :       UITextField!
     
     @IBOutlet weak var userNameLabel :       UILabel!
-    @IBOutlet weak var userIdLabel :       UILabel!
-    @IBOutlet weak var dateOfBirthLabel :       UILabel!
+    @IBOutlet weak var userIdLabel :         UILabel!
+    @IBOutlet weak var dateOfBirthLabel :    UILabel!
     
     
-    
+    //MARK: Variables
+
     var datePicker: UIDatePicker!
     var selectedData : Date?
     
-    
+    //MARK: Application life cycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configureDatePickerView()
